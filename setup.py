@@ -17,6 +17,9 @@ setuptools.setup(
         where="filter_dynamodb_event_streams_sent_to_lambda"
     ),
     install_requires=[
+        "aws-cdk.aws_dynamodb==1.137.0",
+        "aws-cdk.aws_lambda==1.137.0",
+        "aws-cdk.aws_sqs==1.137.0",
         "aws-cdk.core==1.137.0",
         "black==21.6b0",
         "pylint==2.10.2",

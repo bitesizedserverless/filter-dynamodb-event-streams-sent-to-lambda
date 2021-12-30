@@ -1,13 +1,11 @@
 """Module for the main FilterDynamodbEventStreamsSentToLambda Stack."""
 
-# Standard library imports
-# -
-
-# Related third party imports
-# -
+# Third party imports
+from aws_cdk import core as cdk
 
 # Local application/library specific imports
-from aws_cdk import core as cdk
+from filter_dynamodb_event_streams_sent_to_lambda.sqs_example import SqsExample
+from filter_dynamodb_event_streams_sent_to_lambda.ddb_example import DdbExample
 
 
 class FilterDynamodbEventStreamsSentToLambdaStack(cdk.Stack):
@@ -17,10 +15,10 @@ class FilterDynamodbEventStreamsSentToLambdaStack(cdk.Stack):
         self,
         scope: cdk.Construct,
         construct_id: str,
-        config: dict,  # pylint: disable=unused-argument
         **kwargs,
     ) -> None:
         """Construct a new FilterDynamodbEventStreamsSentToLambdaStack."""
         super().__init__(scope, construct_id, **kwargs)
 
-        # The code that defines your stack goes here
+        SqsExample(scope=self, construct_id="SqsExample")
+        DdbExample(scope=self, construct_id="DdbExample")
