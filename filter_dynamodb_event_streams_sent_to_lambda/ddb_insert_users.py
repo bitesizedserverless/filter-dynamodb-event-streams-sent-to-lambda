@@ -1,4 +1,4 @@
-"""Module for the main DdbInsertUsers Stack."""
+"""Module for the main DdbInsertUsers Construct."""
 
 # Standard library imports
 import json
@@ -15,8 +15,8 @@ from aws_cdk import (
 from filter_dynamodb_event_streams_sent_to_lambda.lambda_function import LambdaFunction
 
 
-class DdbInsertUsers(cdk.Stack):
-    """The DdbInsertUsers Stack."""
+class DdbInsertUsers(cdk.Construct):
+    """The DdbInsertUsers Construct."""
 
     def __init__(
         self,

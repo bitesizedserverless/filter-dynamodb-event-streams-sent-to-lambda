@@ -1,4 +1,4 @@
-"""Module for the main DdbNewAndUpdatedFlagged Stack."""
+"""Module for the main DdbNewAndUpdatedFlagged Construct."""
 
 # Standard library imports
 import json
@@ -15,8 +15,8 @@ from aws_cdk import (
 from filter_dynamodb_event_streams_sent_to_lambda.lambda_function import LambdaFunction
 
 
-class DdbNewAndUpdatedFlagged(cdk.Stack):
-    """The DdbNewAndUpdatedFlagged Stack."""
+class DdbNewAndUpdatedFlagged(cdk.Construct):
+    """The DdbNewAndUpdatedFlagged Construct."""
 
     def __init__(
         self,

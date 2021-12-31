@@ -1,4 +1,4 @@
-"""Module for the main SqsHighPriority Stack."""
+"""Module for the main SqsHighPriority Construct."""
 
 # Standard library imports
 import json
@@ -10,8 +10,8 @@ from aws_cdk import core as cdk, aws_sqs as sqs, aws_lambda as lambda_
 from filter_dynamodb_event_streams_sent_to_lambda.lambda_function import LambdaFunction
 
 
-class SqsHighPriority(cdk.Stack):
-    """The SqsHighPriority Stack."""
+class SqsHighPriority(cdk.Construct):
+    """The SqsHighPriority Construct."""
 
     def __init__(
         self,

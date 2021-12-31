@@ -1,4 +1,4 @@
-"""Module for the main DdbInsertsOnly Stack."""
+"""Module for the main DdbInsertsOnly Construct."""
 
 # Standard library imports
 import json
@@ -15,8 +15,8 @@ from aws_cdk import (
 from filter_dynamodb_event_streams_sent_to_lambda.lambda_function import LambdaFunction
 
 
-class DdbInsertsOnly(cdk.Stack):
-    """The DdbInsertsOnly Stack."""
+class DdbInsertsOnly(cdk.Construct):
+    """The DdbInsertsOnly Construct."""
 
     def __init__(
         self,

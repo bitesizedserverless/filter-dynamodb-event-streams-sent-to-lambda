@@ -1,4 +1,4 @@
-"""Module for the main SqsExample Stack."""
+"""Module for the main SqsExample Construct."""
 
 # Third party imports
 from aws_cdk import core as cdk, aws_sqs as sqs
@@ -15,8 +15,8 @@ from filter_dynamodb_event_streams_sent_to_lambda.sqs_new_purchase_price import 
 )
 
 
-class SqsExample(cdk.Stack):
-    """The SqsExample Stack."""
+class SqsExample(cdk.Construct):
+    """The SqsExample Construct."""
 
     def __init__(
         self,

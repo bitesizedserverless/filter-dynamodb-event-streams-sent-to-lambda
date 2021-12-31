@@ -1,4 +1,4 @@
-"""Module for the main DdbExample Stack."""
+"""Module for the main DdbExample Construct."""
 
 # Standard library imports
 # -
@@ -17,8 +17,8 @@ from filter_dynamodb_event_streams_sent_to_lambda.ddb_new_and_updated_flagged im
 )
 
 
-class DdbExample(cdk.Stack):
-    """The DdbExample Stack."""
+class DdbExample(cdk.Construct):
+    """The DdbExample Construct."""
 
     def __init__(
         self,
